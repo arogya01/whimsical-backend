@@ -8,15 +8,15 @@ router.post('/blog/add',ensureLogin,(req,res)=>{
  res.status(201).json({message:"blog added!!"})
 });
 
-router.get('/blog',(req,res)=>{
+router.get('/blog',ensureLogin,(req,res)=>{
 
 });
 
-router.put('/blog/:id',(req,res)=>{
+router.put('/blog/:id',ensureLogin,(req,res)=>{
 
 });
 
-router.delete('/blog/delete',(req,res)=>{
+router.delete('/blog/delete',ensureLogin,(req,res)=>{
 
 });
 
